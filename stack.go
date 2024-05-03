@@ -45,15 +45,15 @@ func main() {
 	stack.Push(2)
 	stack.Push(3)
 
-	fmt.Println("Size:", stack.Size()) // Size: 3
+	fmt.Println("Size:", stack.Size())
 
 	item, _ := stack.Pop()
-	fmt.Println("Popped item:", item) // Popped item: 3
+	fmt.Println("Popped item:", item)
 	temp, err := stack.Peek()
 	if err != nil {
 		fmt.Println(err)
 	}
-	fmt.Println("Peek item:", temp) // Peek item: 2
+	fmt.Println("Peek item:", temp)
 
-	fmt.Println("Is stack empty?", stack.IsEmpty()) // Is stack empty? false
+	fmt.Println("Is stack empty?", stack.IsEmpty())
 }
